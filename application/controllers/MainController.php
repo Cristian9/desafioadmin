@@ -21,13 +21,13 @@ class MainController extends CI_Controller {
 		$pass = $this->input->post('password');
 
 		//$isValid = $this->loginWSAuthenticate($user, $pass, $wsUrl);
-        $isValid = 1;
-		if($isValid) {
-            $_SESSION['uname'] = $user;
-            redirect('main');
-        } else {
-            redirect('login?error=1');
-        }
+		$isValid = 1;
+			if($isValid) {
+		    $_SESSION['uname'] = $user;
+		    redirect('main');
+		} else {
+		    redirect('login?error=1');
+		}
 	}
 
     public function mainmenu() {
