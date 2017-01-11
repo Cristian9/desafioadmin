@@ -16,19 +16,20 @@ class MainController extends CI_Controller {
 	}
 
 	public function login() {
-		$wsUrl = 'http://10.31.1.223:8051/ServiceAD.asmx?WSDL';
+		/*$wsUrl = 'http://10.31.1.223:8051/ServiceAD.asmx?WSDL';
 		
 		$user = $this->input->post('username');
 		$pass = $this->input->post('password');
 
 		//$isValid = $this->loginWSAuthenticate($user, $pass, $wsUrl);
-        $isValid = 1;
-		if($isValid) {
-            $_SESSION['uname'] = $user;
-            redirect('main');
-        } else {
-            redirect('login?error=1');
-        }
+		$isValid = 1;
+			if($isValid) {
+		    $_SESSION['uname'] = $user;
+		    redirect('main');
+		} else {
+		    redirect('login?error=1');
+		}*/
+		die('logiiiin');
 	}
 
     public function mainmenu() {
