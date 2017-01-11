@@ -8,7 +8,6 @@ class MainController extends CI_Controller {
         error_reporting(E_ERROR);
         parent::__construct();
         $this->load->helper('form');
-        $this->load->model('mainModel');
     }
 
 	public function index()	{
